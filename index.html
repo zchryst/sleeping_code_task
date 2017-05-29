@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Thanks for your feedback</title>
+    <link rel="stylesheet" href="./assets/stylesheets/reset.css">
+    <link rel='stylesheet' href='    https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="./assets/stylesheets/style.css">
+  </head>
+  <body>
+    <header>
+      <img src="./assets/images/sleeping_duck_logo.png" alt="Sleeping Duck">
+    </header>
+
+    <div class="wrapper">
+      <form class="multiform" method="POST" action="javascript:void(0)">
+        <div id='page1' class="page">
+          <h2>Hi <span class="clientName"></span>, How are you sleeping?</h2>
+          <fieldset id='sleep-quality'>
+            <span>poorly</span>
+            <label class='star'>
+              <input type="radio" name="quality" value="1">
+              <span>&#10040;</span>
+            </label>
+            <label class="star">
+              <input type="radio" name="quality" value="2">
+              <span>&#10040;</span>
+            </label>
+            <label class="star">
+              <input type="radio" name="quality" value="3">
+              <span>&#10040;</span>
+            </label>
+            <label class="star">
+              <input type="radio" name="quality" value="4">
+              <span>&#10040;</span>
+            </label>
+            <label class="star">
+              <input type="radio" name="quality" value="5">
+              <span>&#10040;</span>
+            </label>
+            <label class="star">
+              <input type="radio" name="quality" value="6">
+              <span>&#10040;</span>
+            </label>
+            <label class="star">
+              <input type="radio" name="quality" value="7">
+              <span>&#10040;</span>
+            </label>
+            <label class="star">
+              <input type="radio" name="quality" value="8">
+              <span>&#10040;</span>
+            </label>
+            <label class="star">
+              <input type="radio" name="quality" value="9">
+              <span>&#10040;</span>
+            </label>
+            <label class="star">
+              <input type="radio" name="quality" value="10">
+              <span>&#10040;</span>
+            </label>
+            <span>like a baby</span>
+          </fieldset>
+
+          <div class="button-container">
+            <span class="right-btns">
+              <input type="button" class='skip light-btn' value="Skip">
+              <input type="button" class='continue full-btn' value="Continue">
+            </span>
+          </div>
+        </div>
+
+        <div id='page2' class="page">
+          <h2>What postion do you sleep in?</h2>
+          <fieldset id='sleep-position'>
+            <label class='picture-btn'>
+              <p>Side Sleeper</p>
+              <input type="radio" class='rad' name="position" value="Side Sleeper">
+              <img src="./assets/images/on_side.png" alt="">
+            </label>
+            <label class='picture-btn'>
+              <p>Front Sleeper</p>
+              <input type="radio" class='rad' name="position" value="Front Sleeper">
+              <img src="./assets/images/face_down.png" alt="">
+            </label>
+            <label class='picture-btn'>
+              <p>Back Sleeper</p>
+              <input type="radio" class='rad' name="position" value="Back Sleeper">
+              <img src="./assets/images/face_up.png" alt="">
+            </label>
+            <label class='picture-btn'>
+              <p>Switch it up</p>
+              <input type="radio" class='rad' name="position" value="Switch it up">
+              <img src="./assets/images/all_over.png" alt="">
+            </label>
+          </fieldset>
+          <div class="button-container">
+            <input type="button" class='previous light-btn' value="go back">
+            <span class="right-btns">
+              <input type="button" class='skip light-btn' value="Skip">
+              <input type="button" class='continue full-btn' value="Continue">
+            </span>
+          </div>
+        </div>
+
+        <div id='page3' class="page">
+          <h2>Who do you sleep with?</h2>
+          <fieldset id='sleep-partner'>
+            <label class='picture-btn'>
+              <p>Partner</p>
+              <input type="radio" class='rad' name="partner" value="partner">
+              <img src="./assets/images/couple.png" alt="">
+            </label>
+            <label class='picture-btn'>
+              <p>Pet</p>
+              <input type="radio" class='rad' name="partner" value="pet">
+              <img src="./assets/images/man-and-dog.png" alt="">
+            </label>
+            <label class='picture-btn'>
+              <p>Solo</p>
+              <input type="radio" class='rad' name="partner" value="solo">
+              <img src="./assets/images/woman.png" alt="">
+            </label>
+          </fieldset>
+          <div class="button-container">
+            <input type="button" class='previous light-btn' value="go back">
+            <span class="right-btns">
+              <input type="button" class='skip light-btn' value="Skip">
+              <input type="button" class='continue full-btn' value="Continue">
+            </span>
+          </div>
+        </div>
+
+
+        <div id='page4' class="page">
+          <h2>What type of mattress were you sleeping on before sleeping duck?</h2>
+          <select class="mattress-type" name="">
+            <option value="-" selected>-</option>
+            <option value="foam">Foam</option>
+            <option value="spring">Spring</option>
+            <option value="latex">Latex</option>
+            <option value="hybrid">Hybrid</option>
+            <option value="unknown">Don't Know</option>
+            <option value="other">Other</option>
+          </select>
+
+          <h2>What is your gender?</h2>
+          <select class="gender" name="">
+            <option value="-">-</option>
+            <option value="female">Female</option>
+            <option value="male">Male</option>
+            <option value="-">Rather not say</option>
+          </select>
+
+          <h2>How old are you?</h2>
+          <select class="age" name="">
+            <option value="-">-</option>
+            <option value="<20">Under 20</option>
+            <option value="20-29">20 - 29</option>
+            <option value="30-39">30 - 39</option>
+            <option value="40-49">40 - 49</option>
+            <option value="50-59">50 - 59</option>
+            <option value="60-69">60 - 69</option>
+            <option value="70-79">70 - 79</option>
+            <option value=">80">Over 80</option>
+          </select>
+
+          <h2>What is your weight?</h2>
+          <select class="weight" name="">
+            <option value="-">-</option>
+            <option value="<50">Less than 50kg</option>
+            <option value="50 - 59">50 - 59kg</option>
+            <option value="60 - 69">60 - 69kg</option>
+            <option value="70 - 79">70 - 79kg</option>
+            <option value="80 - 89">80 - 89kg</option>
+            <option value="90 - 99">90 - 99kg</option>
+            <option value="100 - 109">100 - 109kg</option>
+            <option value="110 - 119">110 - 119kg</option>
+            <option value="120 - 129">120 - 129kg</option>
+            <option value=">130">more than 130kg</option>
+          </select>
+
+
+          <div class="button-container">
+            <input type="button" class='previous light-btn' value="go back">
+            <span class="right-btns">
+              <input type="button" class='skip light-btn' value="Skip">
+              <input type="button" class='continue full-btn btn-ready' value="Continue">
+            </span>
+          </div>
+        </div>
+
+        <div id='page5' class="page">
+          <div class="feedback">
+            <input type="text" name="title" placeholder="Title">
+
+            <textarea name="review" rows="8" cols="80" placeholder="Feedback"></textarea>
+          </div>
+
+
+          <div class="button-container">
+            <input type="button" class='previous light-btn' value="go back">
+            <span class="right-btns">
+              <input type="submit" class='submit full-btn btn-ready' value="Submit">
+            </span>
+          </div>
+        </div>
+
+        <div id='page6' class="page">
+          <div class="thanks">
+            <h1>Thanks for your feedback <span class="clientName"></span>!</h1>
+          </div>
+        </div>
+      </form>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script src='main.js'></script>
+  </body>
+</html>
